@@ -1,18 +1,18 @@
 {% set name = "pretty_html_table" %}
-{% set version = "0.9.dev0" %}
+{% set version = "0.9.1" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: "63b3ce16ab1abdbc4888094ba792908666122eafe3fd98ed127efbb4dd3ac0f9"
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 781c7014427f820bdb3264985edc2d9caa226e4a67d86b581e8389fbc6091a55
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
   host:
@@ -27,15 +27,15 @@ test:
     - pretty_html_table
 
 about:
-  home: "https://github.com/sbi-rviot/ph_table"
-  license: "MIT"
-  license_family: "MIT"
+  home: https://github.com/sbi-rviot/ph_table
+  license: MIT
+  license_family: MIT
   # check to see if PR: https://github.com/sbi-rviot/ph_table/pull/5 has been merged
   # so we can drop the local license in recipe
-  license_file: "LICENSE.txt"
-  summary: "Make pandas dataframe looking pretty again"
-  doc_url: ""
-  dev_url: "https://github.com/sbi-rviot/ph_table"
+  license_file: LICENSE.txt
+  summary: Make pandas dataframe looking pretty again
+  doc_url: ''
+  dev_url: https://github.com/sbi-rviot/ph_table
 
 extra:
   recipe-maintainers:
