@@ -1,5 +1,5 @@
 {% set name = "pretty_html_table" %}
-{% set version = "0.9.5" %}
+{% set version = "0.9.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 309b31a25bc6541a5bfab6c1ab726ead2625f87e56d009ad9e82ba7af3b39ff0
+  sha256: 38818e7c8f863ce786bef65b1fea4e2424e0a48f765c476c4f9004690a11b3f1
 
 build:
   number: 0
