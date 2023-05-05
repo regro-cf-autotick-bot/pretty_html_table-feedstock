@@ -10,7 +10,7 @@ source:
   sha256: c0de765ca9fd59cafc6912425eff3a4eff34607b96dddf9edf419718b77f9ae3
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
@@ -19,7 +19,7 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - pandas <=1.2.5
+    - pandas
     - python >=3.6
 
 test:
