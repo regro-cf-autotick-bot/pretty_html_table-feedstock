@@ -1,11 +1,11 @@
-About pretty_html_table
-=======================
+About pretty_html_table-feedstock
+=================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pretty_html_table-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/sbi-rviot/ph_table
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pretty_html_table-feedstock/blob/main/LICENSE.txt)
 
 Summary: Make pandas dataframe looking pretty again
 
